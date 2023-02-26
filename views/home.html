@@ -1,0 +1,70 @@
+	<body>
+		<main>
+			<div id="top3">
+				<h1>Top 3 autorów zeszłego tygodnia!</h1>
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			<div id="tabs">
+				<span id="newsList" class="active">Lista newsów</span>
+				<span id="authorsList">Lista autorów</span>
+				<span id="newsEdit">Kreator newsów</span>
+			</div>
+			<div id="tabsContent">
+				<div id="newsListBody">
+					<div id="quickSearch">
+						<label for="newsIdSearch">Wyszukiwarka newsów: </label>
+						<input type="text" id="newsSearch" placeholder="ID newsa lub nazwa autora">
+						<button id="newsSearchButton">Szukaj!</button>
+					</div>
+					<table class="list">
+					</table>
+				</div>
+				<div id="authorsListBody" class="disabled">
+					<div class="list">
+						<table class="list">
+						</table>
+					</div>
+				</div>
+				<div id="newsEditBody" class="disabled">
+					<form name="newsEditor" id="newsEditor">
+						<div class="row">
+							<label for="newsId">ID:</label>
+							<input type="number" id="newsId" name="id" value="0" min="0">
+							<label for="newsTitle">Tytuł:</label>
+							<input type="text" id="newsTitle" name="title">
+						</div>
+						<div class="row">
+							<div>
+								<label for="scales">A. Mierzejski</label>
+								<input type="checkbox" id="author_1" name="author_1" value="1" >
+							</div>
+							<div>
+								<label for="scales">K. Żak</label>
+								<input type="checkbox" id="author_2" name="author_2" value="2" >
+							</div>
+							<div>
+								<label for="scales">M. Zakolski</label>
+								<input type="checkbox" id="author_3" name="author_3" value="3" >
+							</div>
+							<div>
+								<label for="scales">K. Murewicz</label>
+								<input type="checkbox" id="author_4" name="author_4" value="4" >
+							</div>																	
+						</div>
+						<label for="newsContent">Zawartość artykułu:</label>
+						<textarea form="newsEditor" id="newsContent" name="content"></textarea>
+						<div class="buttons">
+							<button type="button" class="left">Zapisz</button>
+							<button type="reset" class="right">Zresetuj</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
